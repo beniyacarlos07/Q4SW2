@@ -1,0 +1,43 @@
+<html>
+<head> 
+    <title>Subsequent Calculator</title>
+    <title>Seatwork 2</title>
+</head>
+<body style="background-color: #C4AEEC;">
+<center>
+    <br>
+    <br>
+    <div class="container bg-light text-center p-5">
+        <h1>Time Calculator</h1>
+        <p>Seconds convert to minutes, hours, and days ☻</p>
+    <center>
+            <p><input type="text" id="seconds"></p>
+            <input type="button" class="btn btn-dark" onClick="SecMin()" value="To Minutes">
+            <input type="button" class="btn btn-dark" onClick="SecHr()" value="To Hours">
+            <input type="button" class="btn btn-dark" onClick="SecDt()" value="To Days">
+        </th>
+    </tr>
+</center>
+</body>
+<script>
+    function SecMin(){
+        var x, y
+        x = (document.getElementById('seconds').value);
+        y = 60;
+        alert(x / y);
+    }
+    function SecHr(){
+        var x, y
+        x = (document.getElementById('seconds').value);
+        y = 3600;
+        alert(x / y);
+    }
+
+    function SecDt(){
+        var x, y 
+        x = (document.getElementById('seconds').value);
+        y = 86400;
+        alert(x / y);
+    }
+</script>
+</html>
